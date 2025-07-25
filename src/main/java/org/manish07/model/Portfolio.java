@@ -96,9 +96,5 @@ public class Portfolio {
 }
 
 
-//public double calculateTotalValue() {
-//    return orders.stream()
-//            .mapToDouble(Order::getPrice)
-//            .sum();
-//}
+
 

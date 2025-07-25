@@ -3,8 +3,6 @@ package org.manish07.model;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity
 @Table(name = "orders")
@@ -41,8 +39,6 @@ public abstract class Order {
     public void setStock(Stock stock) {
         this.stock = stock;
     }
-    
-    
     
 }
 
