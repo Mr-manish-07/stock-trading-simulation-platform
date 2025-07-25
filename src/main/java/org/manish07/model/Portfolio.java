@@ -11,9 +11,10 @@ public class Portfolio {
     
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @Column (name = "portfolio_id")
     private Long portfolioId;
     
-    @Column(nullable = false)
+    @Column(nullable = false , name = "portfolio_name")
     private String portfolioName;
     
     @ManyToOne(fetch = FetchType.LAZY)
@@ -23,6 +24,7 @@ public class Portfolio {
     @OneToMany(mappedBy = "portfolio", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<Order> orders = new HashSet<> ();
     
+    @Column(name = "total_value")
     private double totalValue;
     
     public Portfolio() {}
