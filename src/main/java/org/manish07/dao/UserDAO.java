@@ -1,4 +1,9 @@
 package org.manish07.dao;
 
-public class UserDAO {
+import org.manish07.model.User;
+
+public interface UserDAO extends GenericDAO<User, Long> {
+    User findByEmail(String email);
+    boolean emailExists(String email);
 }
+
