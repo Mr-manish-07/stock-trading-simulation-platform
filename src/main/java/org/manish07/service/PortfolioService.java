@@ -1,4 +1,4 @@
 package org.manish07.service;
 
-public class PortfolioService {
+public interface PortfolioService {
 }

@@ -1,4 +1,4 @@
 package org.manish07.service;
 
-public class AuthService {
+public interface OrderService {
 }
